@@ -6,8 +6,8 @@ from shop_site.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index),
-    path('contact/', contact, name='contact'),
+    path('', Index.as_view()),
+    path('contact/', ContactViews.as_view(), name='contact'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL,
