@@ -8,6 +8,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', Index.as_view()),
     path('contact/', ContactViews.as_view(), name='contact'),
+    path('about/', about, name='about')
 ]
 
 urlpatterns += static(settings.MEDIA_URL,
