@@ -33,7 +33,7 @@
                         <div class="col mb-30">
                             <div class="blog__items">
                                 <div class="blog__thumbnail">
-                                    <a class="blog__thumbnail--link display-block" href="blog-details.html"><img class="blog__thumbnail--img display-block" src="{{row.image.url}}" alt="blog-img"></a>
+                                    <a class="blog__thumbnail--link display-block" href="{% url 'blogDetails' row.id %}"><img class="blog__thumbnail--img display-block" src="{{row.image.url}}" alt="blog-img"></a>
                                 </div>
                                 <div class="blog__content">
                                     <ul class="blog__content--meta d-flex">
